@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -148,6 +149,7 @@ public class DashboardActivity extends AppCompatActivity {
             TextView temps = view.findViewById(R.id.temps);
             TextView openClosed = view.findViewById(R.id.openClosed);
 
+
             refuge.setText(refuges.get(position).getRefugeName());
             parc.setText(refuges.get(position).getParcName());
             comarca.setText(refuges.get(position).getComarca());
@@ -157,6 +159,9 @@ public class DashboardActivity extends AppCompatActivity {
             altura.setText(refuges.get(position).getAltura());
             temps.setText(refuges.get(position).getTemps());
             openClosed.setText(refuges.get(position).getOpenClose());
+            if(openClosed.getText().equals("Close")){
+                openClosed.setTextColor(Color.RED);
+            }
             imgRefuge.setImageResource(refuges.get(position).getImageName());
 
             return view;
