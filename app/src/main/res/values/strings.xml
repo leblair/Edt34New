@@ -13,5 +13,6 @@
     <string name="cognoms">Cognoms</string>
     <string name="email">Email</string>
     <string name="num">Numero de persones</string>
+    <string name="refugis">REFUGIS</string>
 
 </resources>

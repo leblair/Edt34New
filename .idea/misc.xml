@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/focus/AndroidStudioProjects/Edt34/Edt34-master/app/src/main/res/layout/activity_dashboard.xml" value="0.12681159420289856" />
-        <entry key="..\:/Users/focus/AndroidStudioProjects/Edt34/Edt34-master/app/src/main/res/layout/activity_reserva.xml" value="0.33" />
+        <entry key="..\:/Users/focus/AndroidStudioProjects/Edt34/Edt34-master/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/focus/AndroidStudioProjects/Edt34/Edt34-master/app/src/main/res/layout/activity_main.xml" value="0.17255434782608695" />
+        <entry key="..\:/Users/focus/AndroidStudioProjects/Edt34/Edt34-master/app/src/main/res/layout/activity_reserva.xml" value="0.22" />
+        <entry key="..\:/Users/focus/AndroidStudioProjects/Edt34/Edt34-master/app/src/main/res/layout/list_row.xml" value="0.33" />
       </map>
     </option>
   </component>

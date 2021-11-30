@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/anton"
-            android:text="REFUGIS"
+            android:text="@string/refugis"
             android:textAlignment="center"
             android:textColor="#4CAF50"
             android:textSize="34sp"

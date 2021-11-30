@@ -20,6 +20,7 @@ public class DashboardActivity extends AppCompatActivity {
     public static final String TITLE = "com.example.edt34.TITLE";
     public static final String IMAGE = "com.example.edt34.IMAGE";
     private ListView listView;
+    private TextView openClose;
 
     Refuge refuge1 = new Refuge(
             "Refugi Josep Maria Blanc",
@@ -90,14 +91,18 @@ public class DashboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
 
         listView = findViewById(R.id.listView);
+        openClose = findViewById(R.id.openClosed);
 
         refuges.add(refuge1);
         refuges.add(refuge2);
         refuges.add(refuge3);
         refuges.add(refuge4);
         refuges.add(refuge5);
+
         CustomAdapter customAdapter = new CustomAdapter(this,refuges);
         listView.setAdapter(customAdapter);
+
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

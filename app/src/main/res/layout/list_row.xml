@@ -16,40 +16,57 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:padding="10dp">
 
             <TextView
                 android:id="@+id/refuge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="#00C853"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_below="@id/refuge"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
                 app:srcCompat="@drawable/foto1" />
 
             <androidx.gridlayout.widget.GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/refuge"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/imageView"
-                app:columnCount="2">
+                app:columnCount="3">
 
                 <TextView
                     android:id="@+id/parc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView"
+                    android:textColor="#034E22"
+                    android:textStyle="bold"
                     app:layout_columnWeight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="30dp"
+                    android:layout_height="15dp"
+                    android:baselineAlignBottom="true"
+                    app:srcCompat="@drawable/triangle" />
 
                 <TextView
                     android:id="@+id/altura"
-                    android:layout_width="wrap_content"
+                    android:layout_width="25dp"
                     android:layout_height="wrap_content"
                     android:text="TextView"
+                    android:textAlignment="viewEnd"
                     app:layout_columnWeight="1" />
 
                 <TextView
@@ -59,11 +76,20 @@
                     android:text="TextView"
                     app:layout_columnWeight="1" />
 
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="30dp"
+                    android:layout_height="10dp"
+                    android:baselineAlignBottom="true"
+                    android:tintMode="multiply"
+                    app:srcCompat="@drawable/car" />
+
                 <TextView
                     android:id="@+id/temps"
-                    android:layout_width="wrap_content"
+                    android:layout_width="25dp"
                     android:layout_height="wrap_content"
                     android:text="TextView"
+                    android:textAlignment="viewEnd"
                     app:layout_columnWeight="1" />
 
                 <TextView
@@ -73,17 +99,26 @@
                     android:text="TextView"
                     app:layout_columnWeight="1" />
 
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="30dp"
+                    android:layout_height="10dp"
+                    android:baselineAlignBottom="true"
+                    app:srcCompat="@drawable/watch" />
+
                 <TextView
                     android:id="@+id/openClosed"
-                    android:layout_width="wrap_content"
+                    android:layout_width="25dp"
                     android:layout_height="wrap_content"
                     android:text="TextView"
+                    android:textAlignment="viewEnd"
                     app:layout_columnWeight="1" />
 
                 <TextView
                     android:id="@+id/distancia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:text="TextView"
                     app:layout_columnSpan="1"
                     app:layout_columnWeight="1"

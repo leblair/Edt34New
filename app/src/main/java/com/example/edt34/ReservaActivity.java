@@ -177,6 +177,14 @@ public class ReservaActivity extends AppCompatActivity {
         booking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                boolean field1 = new ReservaActivity().checkFields(nom);
+                boolean field2 = new ReservaActivity().checkFields(cognom);
+                boolean field3 = new ReservaActivity().checkFields(email);
+                boolean field4 = new ReservaActivity().checkFields(numPersones);
+                boolean field5 = new ReservaActivity().checkFields(textEntrada);
+                boolean field6 = new ReservaActivity().checkFields(textSortida);
+                if(field1&&field2&&field3&&field4&& field5&&field6){
+
                 Intent emailIntent = new Intent(Intent.ACTION_SEND);
                 emailIntent.setData(Uri.parse("mailto:"));
                 emailIntent.setType("text/plain");
@@ -223,11 +231,23 @@ public class ReservaActivity extends AppCompatActivity {
                             Toast.LENGTH_SHORT).show();
                 }
 
+            }else {
+                    Toast toast = Toast.makeText(ReservaActivity.this,"Fill the empty fields first",Toast.LENGTH_SHORT  );
+                    toast.show();
+                }
+
             }
         });
+
 
         //texttitle.setText(textTitle);
         /*spinnerPerJava.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {@Overridepublic void onItemSelected(AdapterView<?> parent, View view, int position, long id) {// Get Selected value name from the listString selectedCondition = parent.getItemAtPosition(position).toString();        Toast.makeText(MainActivity.this,selectedCondition , Toast.LENGTH_SHORT).show();    }@Overridepublic void onNothingSelected(AdapterView<?> parent) {        Toast.makeText(MainActivity.this, "Nothing Selected", Toast.LENGTH_SHORT).show();    }});
          * */
+    }
+    public boolean checkFields(EditText editText){
+        if(editText.getText().toString().isEmpty()){
+            return false;
+        }
+        return true;
     }
 }

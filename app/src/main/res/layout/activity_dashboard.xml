@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9A9A9A"
     tools:context=".DashboardActivity">
 
     <RelativeLayout
         android:id="@+id/layoutLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#EAEAEA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -21,8 +23,9 @@
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="15dp"
                 android:transitionName="imageapp"
                 app:srcCompat="@drawable/logo1" />
 
@@ -33,9 +36,9 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="70dp"
                 android:fontFamily="@font/anton"
-                android:text="TextView"
+                android:text="@string/refugis"
                 android:textColor="#4CAF50"
-                android:textSize="16sp"
+                android:textSize="22sp"
                 android:transitionName="textapp" />
         </RelativeLayout>
 
@@ -44,10 +47,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/relativeLogo"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginEnd="15dp"
             android:layout_marginBottom="32dp"
+            android:divider="@android:color/transparent"
             android:dividerHeight="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
